@@ -1,0 +1,101 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+/* Element Plus 样式覆盖 */
+.el-menu {
+  border-right: none !important;
+}
+
+.el-header {
+  height: 60px !important;
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+.el-aside {
+  transition: width 0.3s;
+}
+
+.el-main {
+  padding: 20px;
+  background-color: #f0f2f5;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+/* 自定义全局样式 */
+.page-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Element Plus 组件样式优化 */
+.el-card {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.el-card:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.el-table {
+  width: 100%;
+}
+
+.el-form-item__label {
+  font-weight: 500;
+}
+
+/* 响应式布局 */
+@media screen and (max-width: 768px) {
+  .el-aside {
+    width: 64px !important;
+  }
+
+  .el-main {
+    padding: 10px;
+  }
+
+  .page-container {
+    padding: 10px;
+  }
+
+  .el-card {
+    margin-bottom: 10px;
+  }
+}
