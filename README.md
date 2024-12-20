@@ -1,4 +1,4 @@
-# 智能汽车生产管理系统
+# 智能汽车生产管理系统(Geely University of China)
 
 一个基于 Vue 3 + Element Plus 的现代化智能汽车生产管理系统前端项目。
 
